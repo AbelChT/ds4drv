@@ -107,6 +107,7 @@ HID_DEVICES = {
     "Sony Interactive Entertainment Wireless Controller": HidrawUSBDS4Device,
     "Sony Computer Entertainment Wireless Controller": HidrawUSBDS4Device,
     "Wireless Controller": HidrawBluetoothDS4Device,
+    "GameStop PS4 Fun Controller": HidrawUSBDS4Device,
 }
 
 
@@ -134,7 +135,7 @@ class HidrawBackend(Backend):
                 self._scanning_log_message()
 
     def _scanning_log_message(self):
-        self.logger.info("Scanning for devices")
+        self.logger.info("Scanning for devices 1")
 
     @property
     def devices(self):
